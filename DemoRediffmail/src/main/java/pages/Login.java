@@ -53,9 +53,15 @@ public class Login {
 			System.out.println(e.getMessage());
 		}
 	}
+
 	public void skiplogin() {
-		if(driver.findElement(By.linkText("Skip,Go to Inbox")).isDisplayed()) {
-			driver.findElement(By.linkText("Skip,Go to Inbox")).click();
+		for (int i = 0; i < 5; i++) {
+			if (driver.getPageSource().equalsIgnoreCase("Skip,Go to Inbox")) {
+				driver.findElement(By.linkText("Skip,Go to Inbox")).click();
+			} else {
+				break;
+			}
 		}
+
 	}
 }

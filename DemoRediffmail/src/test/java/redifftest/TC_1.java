@@ -15,7 +15,7 @@ public class TC_1 {
 	Mail mp;
   @Test
   public void f() {
-	  String mailto="ash06borde@gmail.com";
+	  String mailto="joy.1686@rediffmail.com";
 	  String subject="hi";
 	  String message="Sending mail from selenium webdriver";
 	  mp.doComposeAs(mailto, subject, message);
@@ -27,7 +27,7 @@ public class TC_1 {
 	  driver=new ChromeDriver();
 	  lp=new Login(driver);
 	  lp.openUrl();
-	  lp.doLoginAs("your username", "your password");
+	  lp.doLoginAs("rth143", "rock12");
 	  lp.skiplogin();
 	  mp=new Mail(driver);
 	  //changed 
