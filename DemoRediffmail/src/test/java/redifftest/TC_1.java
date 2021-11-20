@@ -30,5 +30,6 @@ public class TC_1 {
 	  lp.doLoginAs("your username", "your password");
 	  lp.skiplogin();
 	  mp=new Mail(driver);
+	  //changed 
   }
 }
